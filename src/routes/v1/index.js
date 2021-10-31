@@ -6,9 +6,17 @@ const professionalRoute = require('./professional.route');
 const peopleRoute = require('./people.route');
 const sinhvienRoute = require('./sinhvien.route');
 const worksforRoute = require('./worksfor.route');
+const nhacungcapRoute = require('./nhacungcap.route');
 const companiesRoute = require('./companies.route');
+const loaidichvuRoute = require('./loaidichvu.route');
+const mucphiRoute = require('./mucphi.route');
+const dongxeRoute = require('./dongxe.route');
+const dangkycungcapRoute = require('./dangkycungcap.route');
+const huongdanRoute = require('./HuongDan_HoangDinhTuan_41.route');
 const docsRoute = require('./docs.route');
+
 const config = require('../../config/config');
+
 
 const router = express.Router();
 
@@ -45,6 +53,30 @@ const defaultRoutes = [
     path: '/companiess',
     route: companiesRoute,
   },
+  {
+    path: '/nhacungcaps',
+    route: nhacungcapRoute,
+  },
+  {
+    path: '/loaidichvus',
+    route: loaidichvuRoute,
+  },
+  {
+    path: '/mucphis',
+    route: mucphiRoute,
+  },
+  {
+    path: '/dongxes',
+    route: dongxeRoute,
+  },
+  {
+    path: '/dangkycungcaps',
+    route: dangkycungcapRoute,
+  },
+  {
+    path: '/huongdans',
+    route: huongdanRoute,
+  }
 ];
 
 const devRoutes = [
