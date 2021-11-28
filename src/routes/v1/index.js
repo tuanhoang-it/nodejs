@@ -12,7 +12,12 @@ const loaidichvuRoute = require('./loaidichvu.route');
 const mucphiRoute = require('./mucphi.route');
 const dongxeRoute = require('./dongxe.route');
 const dangkycungcapRoute = require('./dangkycungcap.route');
-const huongdanRoute = require('./HuongDan_HoangDinhTuan_41.route');
+const sinhvien1Route = require('./sinhvien1.route');
+const lop1Route = require('./lop1.route');
+const khoaRoute = require('./khoa.route');
+const monHocRoute = require('./monhoc.route');
+const ketQuaRoute = require('./ketqua.route');
+const BT1quanlydiemRoute = require('./BT1quanlydiem.route');
 const docsRoute = require('./docs.route');
 
 const config = require('../../config/config');
@@ -74,8 +79,28 @@ const defaultRoutes = [
     route: dangkycungcapRoute,
   },
   {
-    path: '/huongdans',
-    route: huongdanRoute,
+    path: '/sinhvien1s',
+    route: sinhvien1Route,
+  },
+  {
+    path: '/lop1s',
+    route: lop1Route,
+  },
+  {
+    path: '/khoas',
+    route: khoaRoute,
+  },
+  {
+    path: '/monHocs',
+    route: monHocRoute,
+  },
+  {
+    path: '/ketQuas',
+    route: ketQuaRoute,
+  },
+  {
+    path: '/baitap',
+    route: BT1quanlydiemRoute,
   }
 ];
 
